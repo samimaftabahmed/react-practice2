@@ -28,9 +28,9 @@ export default function App() {
 
     return (
         <div>
-            <FirstPractice contact={data[0]}/>
-            <FirstPractice contact={data[1]}/>
-            <FirstPractice contact={data[2]}/>
+            {
+                data.map(item => <FirstPractice contact={item}/>)
+            }
         </div>
 
     );
