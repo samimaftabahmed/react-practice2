@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import './FirstPractice.css'
 import FirstPractice from "./components/FirstPractice";
+import FirstClass from "./components/FirstClass";
 
 export default function App() {
 
@@ -29,8 +30,12 @@ export default function App() {
     return (
         <div>
             {
-                data.map(item => <FirstPractice contact={item}/>)
+                data.map(item => <FirstPractice contact={item} key={item.name}/>)
             }
+
+            <br/>
+
+            <FirstClass/>
         </div>
 
     );
