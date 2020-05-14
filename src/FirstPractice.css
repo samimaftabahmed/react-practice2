@@ -1,0 +1,12 @@
+.img-size{
+    height: 200pt;
+    width: 200pt;
+    border-radius: 10px;
+}
+
+.details{
+    margin-left: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}

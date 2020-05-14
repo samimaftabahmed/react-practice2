@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './FirstPractice.css'
+import FirstPractice from "./components/FirstPractice";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+
+    return (
+        <div>
+            <FirstPractice contact={{
+                name: "Machine Learning",
+                imgUrl: require("./images/img-1.jpg"),
+                phone: "011-6512131",
+                email: "sajhsfd@gjhbd.com"
+            }}/>
+            <FirstPractice contact={{
+                name: "Big Data",
+                imgUrl:  require("./images/img-2.jpg"),
+                phone: "022-54120",
+                email: "dgdfg@bnbn.com"
+            }}/>
+            <FirstPractice contact={{
+                name: "Blockchain",
+                imgUrl: require("./images/img-3.jpg"),
+                phone: "033-8732233",
+                email: "iopiop@asas.com"
+            }}/>
+        </div>
+
+    );
 }
 
-export default App;
