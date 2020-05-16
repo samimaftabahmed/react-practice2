@@ -16,6 +16,30 @@ class FirstClass extends Component {
         })
     }
 
+    // initiated after mounting of components is completed
+    componentDidMount() {
+        setTimeout(preValue => {
+            this.setState({
+                count: 2
+            })
+        }, 4000);
+    }
+
+    // initiated when any changes occur in DOM
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        setTimeout(preValue => {
+            this.setState({
+                count: 4
+            })
+        }, 4000);
+    }
+
+    // Called before a component is destroyed
+    // Used for cleanup to prevent memory leaks
+    componentWillUnmount() {
+
+
+    }
 
     render() {
         return (

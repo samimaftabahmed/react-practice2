@@ -3,6 +3,7 @@ import './App.css';
 import './FirstPractice.css'
 import FirstPractice from "./components/FirstPractice";
 import FirstClass from "./components/FirstClass";
+import {Link} from "react-router-dom";
 
 export default function App() {
 
@@ -29,6 +30,15 @@ export default function App() {
 
     return (
         <div>
+
+            <h1>Home</h1>
+            <h2>
+                <Link to="/contact">Go to Contact</Link>
+            </h2>
+            <h2>
+                <Link to="/users">Go to Users</Link>
+            </h2>
+
             {
                 data.map(item => <FirstPractice contact={item} key={item.name}/>)
             }
